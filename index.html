@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DSA Beginner Roadmap</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f6fa;
+  padding:20px;
+}
+
+h1{
+  text-align:center;
+  color:#2c3e50;
+}
+
+.topic{
+  background:#ffffff;
+  margin-bottom:20px;
+  padding:15px;
+  border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.topic h2{
+  margin-top:0;
+  color:#34495e;
+  border-bottom:2px solid #eee;
+  padding-bottom:6px;
+}
+
+.problem{
+  border-bottom:1px solid #eee;
+  padding:10px 0;
+}
+
+.problem-header{
+  font-weight:bold;
+  cursor:pointer;
+  color:#2980b9;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.problem-details{
+  display:none;
+  background:#f1f3f7;
+  padding:12px;
+  border-radius:6px;
+  margin-top:8px;
+}
+
+.problem-details ul{
+  margin-left:18px;
+}
+
+.watch-btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 14px;
+  background:#e74c3c;
+  color:white;
+  border-radius:4px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+input[type="checkbox"]{
+  transform:scale(1.2);
+}
+</style>
+</head>
+
+<body>
+
+<h1>DSA Roadmap – Beginner Friendly</h1>
+
+<!-- ================= BASICS ================= -->
+<div class="topic">
+<h2>🚀 DSA Prerequisites</h2>
+
+<p style="color:#555;">
+Before starting DSA problems, you must be comfortable with
+these <b>core programming fundamentals</b>.  
+If any item feels unclear, revise it first.
+</p>
+
+<!-- 1 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Variables & Data Types <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>What you should know:</b></p>
+<ul>
+<li>How data is stored in memory</li>
+<li>Difference between numbers, characters, strings</li>
+<li>True / False values</li>
+</ul>
+
+<p><b>Why this matters for DSA:</b></p>
+<ul>
+<li>Choosing the correct data type avoids errors</li>
+<li>Memory understanding helps in optimization</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+
+
+<!-- 3 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Conditionals(if-else) <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>What you should know:</b></p>
+<ul>
+<li>Making decisions in code</li>
+<li>Comparing values</li>
+</ul>
+
+<p><b>Why this matters:</b></p>
+<ul>
+<li>Almost every DSA problem uses conditions</li>
+<li>Essential for logic building</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Loops(for/while) <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>What you should know:</b></p>
+<ul>
+<li>Repeating tasks efficiently</li>
+<li>Loop control (start, end, increment)</li>
+</ul>
+
+<p><b>Why this matters:</b></p>
+<ul>
+<li>Arrays, strings, linked lists all use loops</li>
+<li>Time complexity depends on loops</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+
+<!-- 6 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Arrays (Basics) <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>What you should know:</b></p>
+<ul>
+<li>Storing multiple values</li>
+<li>Index-based access</li>
+</ul>
+
+<p><b>Why this matters:</b></p>
+<ul>
+<li>Most DSA problems start with arrays</li>
+<li>Base for strings, DP, matrices</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 7 -->
+
+
+</div>
+
+
+<!-- ================= ARRAYS ================= -->
+<!-- ================= ARRAYS ================= -->
+<div class="topic">
+<h2>📗 Arrays (Easy – Build Strong Basics)</h2>
+
+<p style="color:#555;">
+Arrays are the foundation of DSA.  
+Most problems are solved by <b>looping, comparing, and tracking values</b>.
+</p>
+
+<!-- 1 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Largest Element in an Array <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Given an array, find the largest element.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Start by assuming the first element is the largest</li>
+<li>Compare it with each element</li>
+<li>Update when you find a bigger number</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Input: [2, 5, 1, 9]</li>
+<li>Output: <b>9</b></li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Second Largest Element in an Array <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Find the second largest distinct element in the array.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Track the largest value</li>
+<li>Also track the second largest value</li>
+<li>Update carefully when a new larger value is found</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Input: [10, 20, 15]</li>
+<li>Output: <b>15</b></li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Check if Array is Sorted <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check whether the array elements are in increasing order.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Compare each element with the one before it</li>
+<li>If any element is smaller than previous → not sorted</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>[1, 2, 3, 4] → Sorted</li>
+<li>[1, 3, 2] → Not Sorted</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Remove Duplicates from Sorted Array <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Remove duplicate elements from a sorted array.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Because array is sorted, duplicates are adjacent</li>
+<li>Keep only the first occurrence</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Input: [1,1,2,2,3]</li>
+<li>Output: [1,2,3]</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Left Rotate Array by One <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Rotate the array left by one position.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Store the first element</li>
+<li>Shift remaining elements to the left</li>
+<li>Place the first element at the end</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Input: [1,2,3,4]</li>
+<li>Output: [2,3,4,1]</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Move Zeros to End <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Move all zeros to the end without changing order of non-zero elements.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Focus on non-zero elements</li>
+<li>Keep them at the front</li>
+<li>Zeros automatically go to the end</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Input: [0,1,0,3]</li>
+<li>Output: [1,3,0,0]</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Linear Search <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Find whether a given element exists in the array.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Check each element one by one</li>
+<li>Stop when element is found</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Array: [4,6,2,8]</li>
+<li>Search: 6 → Found</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Find Missing Number in an Array <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+An array contains numbers from 1 to N with one missing number. Find it.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Expected sum of numbers from 1 to N</li>
+<li>Subtract actual sum</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Input: [1,2,4,5]</li>
+<li>Missing: <b>3</b></li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+</div>
+
+
+	<!-- ================= STRINGS ================= -->
+<div class="topic">
+<h2>📙 Strings (Easy – Build Strong Basics)</h2>
+
+<p style="color:#555;">
+String problems focus on <b>character comparison, order, and frequency</b>.
+Most string problems use <b>two pointers or counting logic</b>.
+</p>
+
+<!-- 1 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Palindrome Check <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check if a string reads the same forward and backward.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Compare first and last characters</li>
+<li>Move inward until the middle</li>
+<li>If any mismatch occurs → not a palindrome</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"madam" → Palindrome</li>
+<li>"hello" → Not Palindrome</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Reverse a String <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Reverse the given string.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Swap characters from both ends</li>
+<li>Move pointers towards the center</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"abcd" → "dcba"</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Anagram Check <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check whether two strings contain the same characters with the same frequency.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Count frequency of each character</li>
+<li>Compare counts for both strings</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"listen" & "silent" → Anagrams</li>
+<li>"rat" & "car" → Not Anagrams</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Check Rotation of String <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check if one string is a rotation of another.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Concatenate original string with itself</li>
+<li>Check if second string exists inside it</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"abcd" & "cdab" → Rotation</li>
+<li>"abcd" & "acbd" → Not Rotation</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Largest Odd Number in a String <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Given a numeric string, find the largest odd-numbered substring.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Scan from right to left</li>
+<li>First odd digit found determines answer</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"35427" → "35427"</li>
+<li>"4206" → No odd number</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Longest Common Prefix <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Find the longest prefix common to all strings in an array.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Start with first string as prefix</li>
+<li>Shorten prefix until it matches others</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>["flower","flow","flight"] → "fl"</li>
+<li>["dog","racecar"] → ""</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Reverse Words in a String <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Reverse the order of words in a string.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Split string into words</li>
+<li>Rebuild in reverse order</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"I love DSA" → "DSA love I"</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Isomorphic Strings <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check if characters from one string can map one-to-one to another.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Each character should map to only one character</li>
+<li>Reverse mapping should also be valid</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"egg" & "add" → Isomorphic</li>
+<li>"foo" & "bar" → Not Isomorphic</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+</div>
+
+
+<!-- ================= LINKED LIST ================= -->
+<div class="topic">
+<h2>📕 Linked List (Learning → Easy)</h2>
+
+<p style="color:#555;">
+Linked List is a linear data structure made of <b>nodes</b>, where each node
+contains data and a link to the next node.
+</p>
+
+<!-- 1 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+What is a Linked List? <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Concept:</b><br>
+A linked list is a collection of nodes where each node stores:</p>
+<ul>
+<li>Data (value)</li>
+<li>Address of the next node</li>
+</ul>
+
+<p><b>Why Linked List?</b></p>
+<ul>
+<li>Size can change dynamically</li>
+<li>Insertions and deletions are efficient</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>10 → 20 → 30 → NULL</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Types of Linked Lists <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Main Types:</b></p>
+<ul>
+<li>Singly Linked List</li>
+<li>Doubly Linked List</li>
+<li>Circular Linked List</li>
+</ul>
+
+<p><b>Beginner Focus:</b><br>
+Start with <b>Singly Linked List</b>.</p>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Traverse a Linked List <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Visit and read each element of the linked list.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Start from head node</li>
+<li>Move to next node until NULL</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>10 → 20 → 30 → NULL</li>
+<li>Output: 10 20 30</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Find Length of Linked List <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Count the number of nodes in the linked list.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Traverse the list</li>
+<li>Increase count at each node</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>10 → 20 → 30 → NULL</li>
+<li>Length: 3</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Search an Element in Linked List <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check whether a value exists in the linked list.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Traverse the list</li>
+<li>Compare each node’s data</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>List: 5 → 8 → 12 → NULL</li>
+<li>Search: 8 → Found</li>
+<li>Search: 7 → Not Found</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Insert Node at Beginning <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Insert a new node at the start of the linked list.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Create a new node</li>
+<li>Point it to current head</li>
+<li>Update head to new node</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Before: 10 → 20 → NULL</li>
+<li>Insert 5</li>
+<li>After: 5 → 10 → 20 → NULL</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Insert Node at End <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Insert a new node at the end of the linked list.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Traverse until last node</li>
+<li>Attach new node to it</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Before: 10 → 20 → NULL</li>
+<li>Insert 30</li>
+<li>After: 10 → 20 → 30 → NULL</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Delete Head Node <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Remove the first node from the linked list.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Move head to next node</li>
+<li>Free the old head node</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Before: 10 → 20 → 30 → NULL</li>
+<li>After: 20 → 30 → NULL</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+</div>
+
+
+<!-- ================= STACK & QUEUE ================= -->
+<div class="topic">
+<h2>📒 Stack & Queue (Learning → Easy)</h2>
+
+<p style="color:#555;">
+Stack and Queue are linear data structures that follow
+<b>specific insertion and removal rules</b>.
+Understanding these rules is the key.
+</p>
+
+<!-- STACK CONCEPT -->
+
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+What is a Stack? (LIFO) <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Concept:</b><br>
+Stack follows <b>Last In, First Out (LIFO)</b>.</p>
+
+<p><b>Think of:</b></p>
+<ul>
+<li>Stack of books</li>
+<li>Undo / Redo operations</li>
+</ul>
+
+<p><b>Operations:</b></p>
+<ul>
+<li>Push → Add element</li>
+<li>Pop → Remove top element</li>
+<li>Peek → View top element</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- STACK EASY -->
+
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Balanced Parenthesis <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check whether brackets are properly opened and closed.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Opening bracket → push into stack</li>
+<li>Closing bracket → pop from stack</li>
+<li>If mismatch → invalid</li>
+</ul>
+
+<p><b>Why important:</b></p>
+<ul>
+<li>Used in compilers</li>
+<li>Expression evaluation</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"(())" → Balanced</li>
+<li>"(()" → Not Balanced</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Reverse a String using Stack <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Reverse a string using stack behavior.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Push all characters</li>
+<li>Pop them to reverse order</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"abcd" → "dcba"</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- QUEUE CONCEPT -->
+
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+What is a Queue? (FIFO) <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Concept:</b><br>
+Queue follows <b>First In, First Out (FIFO)</b>.</p>
+
+<p><b>Think of:</b></p>
+<ul>
+<li>People waiting in line</li>
+<li>Printer queue</li>
+</ul>
+
+<p><b>Operations:</b></p>
+<ul>
+<li>Enqueue → Add element</li>
+<li>Dequeue → Remove element</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- QUEUE EASY -->
+
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Implement Queue Conceptually <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Understand how elements are added and removed in a queue.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Add at rear</li>
+<li>Remove from front</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>Queue: 10 → 20 → 30</li>
+<li>Remove → 10 removed first</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Stack using Queue (Conceptual) <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Implement stack behavior using queue rules.</p>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Reorder elements after insertion</li>
+<li>Ensure last inserted comes out first</li>
+</ul>
+
+<p><b>Why useful:</b></p>
+<ul>
+<li>Tests understanding of both Stack & Queue</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+</div>
+
+
+<!-- ================= RECURSION ================= -->
+<div class="topic">
+<h2>📕 Recursion (Easy – Understand the Flow)</h2>
+
+<p style="color:#555;">
+Recursion means a function calling itself.
+To understand recursion, always focus on:
+<b>Base Case</b> and <b>Recursive Call</b>.
+</p>
+
+<!-- 1 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Print Numbers from 1 to N <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Print numbers from 1 to N using recursion.</p>
+
+<p><b>Why this problem?</b></p>
+<ul>
+<li>First recursion problem</li>
+<li>Helps understand call stack</li>
+</ul>
+
+<p><b>How it works:</b></p>
+<ul>
+<li>Stop when N becomes 0 (base case)</li>
+<li>Print after recursive call returns</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>N = 5 → Output: 1 2 3 4 5</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Print Numbers from N to 1 <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Print numbers from N to 1 using recursion.</p>
+
+<p><b>How it helps:</b></p>
+<ul>
+<li>Shows how order changes in recursion</li>
+</ul>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Print before recursive call</li>
+<li>Decrease N each time</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>N = 5 → Output: 5 4 3 2 1</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Sum of First N Natural Numbers <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Calculate sum of numbers from 1 to N.</p>
+
+<p><b>Why important?</b></p>
+<ul>
+<li>Shows recursion returning values</li>
+</ul>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Sum of N = N + sum(N−1)</li>
+<li>Stop when N becomes 0</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>N = 4 → 1+2+3+4 = 10</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Factorial of a Number <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Find factorial of a number using recursion.</p>
+
+<p><b>Why this problem?</b></p>
+<ul>
+<li>Classic recursion example</li>
+</ul>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Factorial(N) = N × factorial(N−1)</li>
+<li>Base case at N = 1</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>5! = 5 × 4 × 3 × 2 × 1 = 120</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Check Palindrome using Recursion <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Problem Statement:</b><br>
+Check whether a string is palindrome using recursion.</p>
+
+<p><b>Why this problem?</b></p>
+<ul>
+<li>Combines recursion with strings</li>
+</ul>
+
+<p><b>How to think:</b></p>
+<ul>
+<li>Compare first and last characters</li>
+<li>Move inward recursively</li>
+</ul>
+
+<p><b>Example:</b></p>
+<ul>
+<li>"madam" → Palindrome</li>
+<li>"hello" → Not Palindrome</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+</div>
+<!-- ================= DP ================= -->
+<div class="topic">
+<h2>📓 Dynamic Programming (Patterns Only – Learn the Thinking)</h2>
+
+<p style="color:#555;">
+Dynamic Programming is about <b>building answers step by step</b>.
+These pattern problems train you to:
+store previous results and reuse them.
+</p>
+
+<!-- 1 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Pattern 1: Increasing Star Pattern <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Pattern:</b></p>
+<ul>
+<li>*</li>
+<li>**</li>
+<li>***</li>
+<li>****</li>
+</ul>
+
+<p><b>DP Thinking:</b></p>
+<ul>
+<li>Row 1 = *</li>
+<li>Next row = previous row + *</li>
+</ul>
+
+<p><b>Why important?</b></p>
+<ul>
+<li>Shows how current output depends on previous output</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Pattern 2: Repeated Number Triangle <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Pattern:</b></p>
+<ul>
+<li>1</li>
+<li>22</li>
+<li>333</li>
+<li>4444</li>
+</ul>
+
+<p><b>DP Thinking:</b></p>
+<ul>
+<li>Row depends on row number</li>
+<li>Each next row grows in size</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Pattern 3: Prefix Sum Pattern <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Pattern:</b></p>
+<ul>
+<li>1 → 1</li>
+<li>2 → 1 2</li>
+<li>3 → 1 2 3</li>
+</ul>
+
+<p><b>DP Thinking:</b></p>
+<ul>
+<li>Each number is built by adding previous numbers</li>
+</ul>
+
+<p><b>Why useful?</b></p>
+<ul>
+<li>Base idea for prefix sum DP</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Pattern 4: Doubling Count Pattern <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Pattern:</b></p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>4</li>
+<li>8</li>
+<li>16</li>
+</ul>
+
+<p><b>DP Thinking:</b></p>
+<ul>
+<li>Next value = previous × 2</li>
+</ul>
+
+<p><b>What it teaches:</b></p>
+<ul>
+<li>Simple recurrence relation</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Pattern 5: Pascal Triangle Pattern <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Pattern:</b></p>
+<ul>
+<li>1</li>
+<li>1 1</li>
+<li>1 2 1</li>
+<li>1 3 3 1</li>
+</ul>
+
+<p><b>DP Thinking:</b></p>
+<ul>
+<li>Each value depends on two values above it</li>
+</ul>
+
+<p><b>Why this matters?</b></p>
+<ul>
+<li>Base for many DP grid problems</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="problem">
+<div class="problem-header" onclick="toggleProblem(this)">
+Pattern 6: Stair Count Visualization <input type="checkbox">
+</div>
+<div class="problem-details">
+<p><b>Pattern:</b></p>
+<ul>
+<li>1 step → 1 way</li>
+<li>2 steps → 2 ways</li>
+<li>3 steps → 3 ways</li>
+<li>4 steps → 5 ways</li>
+</ul>
+
+<p><b>DP Thinking:</b></p>
+<ul>
+<li>Ways(n) = Ways(n−1) + Ways(n−2)</li>
+</ul>
+
+<p><b>Why include?</b></p>
+<ul>
+<li>Visual intro to DP recurrence (no coding)</li>
+</ul>
+
+<div class="links"></div>
+</div>
+</div>
+
+</div>
+
+
+<script>
+function toggleProblem(el){
+  const details = el.nextElementSibling;
+  details.style.display =
+    details.style.display === "block" ? "none" : "block";
+}
+
+document.querySelectorAll(".problem").forEach(p=>{
+  const title = p.querySelector(".problem-header").innerText.trim();
+  const q = title.toLowerCase().replace(/[^a-z0-9 ]/g,"").replace(/ /g,"+");
+  const linksDiv = p.querySelector(".links");
+  linksDiv.innerHTML = `
+    <a class="watch-btn" target="_blank"
+       href="https://www.youtube.com/results?search_query=${q}+striver+dsa">
+       ▶ Watch Video
+    </a>`;
+});
+</script>
+
+</body>
+</html>
